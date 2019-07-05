@@ -2,7 +2,7 @@
 set -e
 set -x
 
-MOZIOT_HOME="${MOZIOT_HOME:=${HOME}/.mozilla-iot}"
+ZHENLING_HOME="${ZHENLING_HOME:=${HOME}/.zhenling-iot}"
 args=""
 start_task="start"
 
@@ -46,5 +46,5 @@ run_app() {
   npm run $start_task -- $args
 }
 
-mkdir -p "${MOZIOT_HOME}/log"
+mkdir -p "${ZHENLING_HOME}/log"
 run_app

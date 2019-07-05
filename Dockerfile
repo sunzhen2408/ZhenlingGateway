@@ -25,7 +25,7 @@ RUN echo "#log: Configuring locales" \
   && dpkg-reconfigure locales \
   && sync
 
-ENV project mozilla-iot
+ENV project zhenling-iot
 
 RUN echo "#log: ${project}: Setup system" \
   && set -x \
@@ -35,13 +35,13 @@ RUN echo "#log: ${project}: Setup system" \
   && apt-get clean \
   && sync
 
-ADD . /root/mozilla-iot/gateway
-WORKDIR /root/mozilla-iot/gateway/..
+ADD . /root/zhenling-iot/zhenlingGateway
+WORKDIR /root/zhenling-iot/zhenlingGateway/..
 RUN echo "#log: ${project}: Preparing sources" \
   && set -x \
-  && ./gateway/install.sh \
+  && ./zhenlingGateway/install.sh \
   && sync
 
 EXPOSE 8080
-WORKDIR /root/mozilla-iot/gateway
+WORKDIR /root/zhenling-iot/zhenlingGateway
 CMD [ "./run-app.sh" ]

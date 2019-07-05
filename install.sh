@@ -19,8 +19,8 @@ sudo apt install -y \
     python \
     #eol
 
-mkdir -p mozilla-iot
-cd mozilla-iot
+mkdir -p zhenling-iot
+cd zhenling-iot
 
 # Install and configure nvm
 [ -e "${HOME}/.bashrc" ] || touch "${HOME}/.bashrc"
@@ -37,10 +37,10 @@ nvm use ${NODE_VERSION}
 sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
 
 # Download and install the required node modules
-if [ ! -d "gateway" ]; then
-    git clone https://github.com/moziot/gateway.git
+if [ ! -d "zhenlingGateway" ]; then
+    git clone https://github.com/sunzhen2408/zhenlingGateway.git
 fi
-cd gateway
+cd zhenlingGateway
 npm install .
 
 # Create a self-signed cert. This is temporary (for development).
