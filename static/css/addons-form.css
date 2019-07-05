@@ -1,0 +1,205 @@
+#addon-config-settings {
+  background: #305067;
+}
+
+#addon-config-settings .json-schema-form {
+  top: 50%;
+  color: #fff;
+  font-size: 1.6rem;
+  min-width: 30rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+#addon-config-settings .json-schema-form legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: inherit;
+  border: 0;
+  border-bottom: 1px solid #fff;
+}
+
+#addon-config-settings .json-schema-form fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#addon-config-settings .json-schema-form > p > .form-group {
+  padding-left: 0;
+}
+
+#addon-config-settings .json-schema-form > p > .form-group > fieldset > legend {
+  display: none;
+}
+
+#addon-config-settings .json-schema-form .form-group {
+  padding-left: 10px;
+  margin-bottom: 1.5rem;
+}
+
+#addon-config-settings .json-schema-form .control-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#addon-config-settings .json-schema-form .field-description {
+  margin-top: 0rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#addon-config-settings .json-schema-form .form-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+#addon-config-settings .json-schema-form .form-control:disabled {
+  background-color: #597285;
+  color: #fff;
+}
+
+#addon-config-settings .json-schema-form .checkbox {
+  height: 2.3rem;
+  line-height: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#addon-config-settings .json-schema-form input[type=checkbox] {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin-left: 0rem;
+}
+
+#addon-config-settings .json-schema-form .checkbox-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#addon-config-settings .json-schema-form .title {
+  font-size: 1.3rem;
+  display: block;
+  width: 12.8rem;
+  height: 3.6rem;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+#addon-config-settings .json-schema-form .btn-form-tools:hover:enabled,
+#addon-config-settings .json-schema-form .btn-form-tools:active:enabled {
+  background-color: #658196;
+}
+
+#addon-config-settings .json-schema-form .btn-form-tools::-moz-focus-inner {
+  border: 0;
+}
+
+#addon-config-settings .json-schema-form .btn-form-tools {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #597285;
+  color: #fff;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+#addon-config-settings .json-schema-form .btn-add {
+  background-image: url('../optimized-images/add_arrayfield.svg');
+}
+
+#addon-config-settings .json-schema-form .btn-remove {
+  background-image: url('../optimized-images/clear_arrayfield.svg');
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+}
+
+#addon-config-settings .json-schema-form .array-item-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5rem;
+  grid-auto-rows: minmax(3rem, auto);
+  border-bottom: 1px solid #fff;
+}
+
+#addon-config-settings .json-schema-form .array-item-col {
+  grid-column: span 6;
+  grid-row: 1;
+}
+
+#addon-config-settings .json-schema-form .array-item-col-field {
+  grid-column-start: span 5;
+  grid-row: 1;
+}
+
+#addon-config-settings .json-schema-form .array-item-col-tool {
+  position: relative;
+  grid-column: 6;
+  grid-row: 1;
+}
+
+#addon-config-settings .json-schema-form .errors-field.hidden {
+  display: none;
+}
+
+#addon-config-settings .json-schema-form .errors-title {
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  color: orange;
+}
+
+#addon-config-settings .json-schema-form .errors-list {
+  transform: translateY(0%);
+  top: auto;
+  margin: 0 auto;
+  padding: 0rem;
+  padding-left: 1em;
+  text-indent: -1em;
+  list-style-position: inside;
+  color: orange;
+  position: relative;
+  left: auto;
+}
+
+#addon-config-settings .button-submit {
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: 0.5em;
+  background-image: url('../optimized-images/check-16.svg');
+  margin: 1rem auto;
+  font-size: 1.6rem;
+  background-color: #597285;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 4rem;
+  color: #fff;
+}
+
+#addon-config-settings .button-submit:hover,
+#addon-config-settings .button-submit:active {
+  background-color: #658196;
+}
+
+#addon-config-settings .button-submit::-moz-focus-inner {
+  border: 0;
+}

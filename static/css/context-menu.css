@@ -1,0 +1,149 @@
+#context-menu {
+  text-align: center;
+}
+
+#context-menu-heading {
+  line-height: 9.6rem;
+}
+
+#context-menu-heading-custom-icon {
+  display: inline-block;
+  transform: scale(0.62);
+  position: relative;
+  top: 2.3rem;
+  left: 0.6rem;
+}
+
+#context-menu-heading-icon {
+  display: inline-block;
+}
+
+#context-menu-heading-icon:not(.custom-thing) {
+  height: 4rem;
+  width: 4rem;
+  border: 0.1rem solid white;
+  border-radius: 2rem;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff64;
+  position: relative;
+  top: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+#context-menu-heading-text {
+  font-size: 1.6rem;
+}
+
+#context-menu-content {
+  text-align: center;
+  position: relative;
+  top: calc(50% - 3.8rem);
+  transform: translateY(-50%);
+}
+
+#context-menu-heading .hidden,
+#context-menu-content .hidden {
+  display: none;
+}
+
+.context-menu-button {
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.6rem;
+  width: 60%;
+  min-width: 15rem;
+  height: 6rem;
+}
+
+.context-menu-button.danger {
+  background-color: #ff5555;
+}
+
+#context-menu-back-button {
+  background-color: transparent;
+}
+
+#context-menu-content-edit {
+  background-color: #597285;
+  width: 50%;
+  min-width: 28rem;
+  max-width: 65rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+}
+
+#edit-thing-icon:not(.custom-thing) {
+  width: 6.2rem;
+  height: 6.2rem;
+  background-size: 3.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff64;
+  border: 0.1rem solid white;
+  border-radius: 3.2rem;
+}
+
+#edit-thing-metadata {
+  flex: 1;
+  padding: 1rem 1rem 0 1rem;
+  text-align: left;
+}
+
+#edit-thing-name {
+  display: block;
+  width: calc(100% - 1rem);
+}
+
+#edit-thing-custom-icon-label {
+  appearance: button;
+  -moz-appearance: button;
+  font-size: 1.5rem;
+}
+
+.edit-thing-button {
+  height: 4rem;
+  background-color: #7f93a1;
+  margin: 1.25rem 0;
+}
+
+.edit-thing-custom-icon-input:disabled + label,
+.edit-thing-custom-icon-input:disabled:hover + label,
+.edit-thing-custom-icon-input:hover:active + label,
+.edit-thing-button:disabled,
+.edit-thing-button:disabled:hover,
+.edit-thing-button:hover:active {
+  background-color: #597285;
+}
+
+#edit-thing-label {
+  display: block;
+  text-align: left;
+  color: #ccc;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+#edit-thing-label.error {
+  color: orange;
+}
+
+@media only screen and (max-width: 800px) {
+  #edit-thing-spacer {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  #edit-thing-type {
+    width: 100%;
+  }
+
+  #edit-thing-metadata {
+    padding-bottom: 1rem;
+  }
+}
