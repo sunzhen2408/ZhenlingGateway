@@ -1,0 +1,163 @@
+#floorplan-view {
+  background-color: #5d9bc7;
+}
+
+#floorplan-view.edit {
+  background-color: #305067;
+  z-index: 50;
+}
+
+#floorplan {
+  display: block;
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('/uploads/floorplan.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.floorplan-thing {
+  position: absolute;
+  font-size: 2.4rem;
+  width: 12.8rem;
+  height: 12.8rem;
+  border-radius: 6.4rem;
+  text-align: center;
+  color: white;
+  user-select: none;
+  touch-callout: none;
+  -webkit-touch-callout: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  opacity: 0.5;
+}
+
+.floorplan-thing.connected {
+  opacity: 1;
+}
+
+#floorplan.editing .floorplan-thing {
+  cursor: grab;
+}
+
+.floorplan-thing-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.0);
+  z-index: 10;
+}
+
+#floorplan.editing .floorplan-thing-link {
+  display: none;
+}
+
+.floorplan-thing-name {
+  margin-top: 0.5rem;
+  max-height: 6rem;
+  overflow: hidden;
+  display: none;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+#floorplan.editing .floorplan-thing-name {
+  display: block;
+}
+
+
+#floorplan-edit-button {
+  bottom: 2rem;
+  right: 2rem;
+  background-image: url('../optimized-images/edit.svg');
+}
+
+#floorplan-done-button {
+  bottom: 2rem;
+  right: 2rem;
+  background-image: url('../optimized-images/done.svg');
+  background-color: transparent;
+}
+
+#floorplan-back-button {
+  top: 2rem;
+  left: 2rem;
+  background-image: url('../optimized-images/back.png');
+  background-color: transparent;
+  display: none;
+}
+
+#floorplan-view.edit #floorplan-back-button {
+  display: block;
+}
+
+#floorplan-upload-form {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+#floorplan-upload-form.hidden {
+  display: none;
+}
+
+#floorplan-upload-button {
+  margin: 1rem;
+  background-image: url('../optimized-images/upload.png');
+  background-repeat: no-repeat;
+  background-position: 0.75rem;
+  background-size: 2.4rem;
+  padding-left: 4rem;
+}
+
+#floorplan-upload-button.loading {
+  background-image: url('../optimized-images/loading.gif');
+}
+
+#floorplan-view .hint {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+#floorplan-file-input {
+  display: none;
+}
+
+.svg-thing-link {
+  outline: none;
+  cursor: pointer;
+}
+
+.svg-thing-icon {
+  fill: #5d9bc7;
+}
+
+#floorplan-view.edit .svg-thing-icon {
+  fill: #5c7587;
+}
+
+.svg-thing-text {
+  fill: #fff;
+  text-shadow: 1px 1px 5px #000;
+  font-size: 2px; /* Gets scaled into SVG units */
+  display: none;
+}
+
+#floorplan-view.edit .svg-thing-link {
+  cursor: move;
+}
+
+#floorplan-view.edit .svg-thing-text {
+  display: block;
+}

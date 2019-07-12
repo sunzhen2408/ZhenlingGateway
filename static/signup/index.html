@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#75AACF">
+    <!-- <title>Create User - WebThings Gateway</title> -->
+    <title>创建用户</title>
+    <link rel="manifest" href="/app.webmanifest">
+    <link rel="icon" href="/optimized-images/icon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/css/user-form.css" />
+  </head>
+  <body>
+    <img id="wordmark" alt="Mozilla IoT" src="/optimized-images/wordmark.svg" />
+    <form id="create-user-form" class="user-form">
+      <!-- <h1>Welcome</h1> -->
+      <h1>欢迎使用</h1>
+      <!-- <p>Create your first user account:</p> -->
+      <p>创建你的用户名：</p>
+      <input type="text" name="name" placeholder="Name" id="name" required autofocus>
+      <input type="email" name="email" placeholder="Email" id="email" required>
+      <input id="password" type="password" name="password"
+             placeholder="Password" required>
+      <input id="confirm-password" type="password" name="confirm-password"
+             placeholder="Confirm Password" required>
+      <div id="error-password-mismatch" class="error hidden">
+        <!-- Passwords do not match -->
+        密码不匹配
+      </div>
+      <div id="error-submission" class="error hidden"></div>
+      <!-- <button id="create-user-button" type="submit">Next</button> -->
+      <button id="create-user-button" type="submit">下一步</button>
+    </form>
+  </body>
+</html>

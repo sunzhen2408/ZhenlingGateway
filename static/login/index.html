@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#75AACF">
+    <!-- <title>Login - WebThings Gateway</title> -->
+    <title>登录</title>
+    <link rel="manifest" href="/app.webmanifest">
+    <link rel="icon" href="/optimized-images/icon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="/css/user-form.css" />
+  </head>
+  <body>
+    <img id="wordmark" alt="Mozilla IoT" src="/optimized-images/wordmark.svg" />
+    <form id="login-form" class="user-form" method="post">
+      <!-- <input type="email" id="email" name="email" placeholder="Email" autofocus> -->
+      <input type="email" id="email" name="email" placeholder="邮箱" autofocus>
+      <!-- <input type="password" id="password" name="password" placeholder="Password"> -->
+      <input type="password" id="password" name="password" placeholder="密码">
+      <div id="error-submission" class="error hidden"></div>
+      <!-- <button id="login-button" type="submit">Log in</button> -->
+      <button id="login-button" type="submit">登录</button>
+    </form>
+  </body>
+</html>
