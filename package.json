@@ -42,7 +42,7 @@
     "csv-parse": "^4.4.1",
     "dnssd": "^0.4.1",
     "express": "^4.16.4",
-    "express-fileupload": "^1.1.4",
+    "express-fileupload": "^1.1.9",
     "express-handlebars": "^3.0.2",
     "express-promise-router": "^3.0.3",
     "express-ws": "^4.0.0",
