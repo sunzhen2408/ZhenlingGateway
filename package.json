@@ -48,7 +48,7 @@
     "express-ws": "^4.0.0",
     "gateway-addon": "https://github.com/mozilla-iot/gateway-addon-node",
     "greenlock": "^2.7.17",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "ip-regex": "^4.0.0",
     "jsonwebtoken": "^8.5.1",
     "le-challenge-dns": "^3.0.3",
