@@ -64,7 +64,7 @@
     "source-map-support": "^0.5.12",
     "sqlite3": "^4.0.6",
     "string-format": "^2.0.0",
-    "tar": "^4.4.8",
+    "tar": "^4.4.15",
     "tmp": "^0.1.0",
     "uuid": "^3.3.2",
     "web-push": "^3.3.3",
