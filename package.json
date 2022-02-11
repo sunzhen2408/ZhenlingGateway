@@ -43,7 +43,7 @@
     "dnssd": "^0.4.1",
     "express": "^4.16.4",
     "express-fileupload": "^1.1.4",
-    "express-handlebars": "^3.0.2",
+    "express-handlebars": "^5.3.1",
     "express-promise-router": "^3.0.3",
     "express-ws": "^4.0.0",
     "gateway-addon": "https://github.com/mozilla-iot/gateway-addon-node",
